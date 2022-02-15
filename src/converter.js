@@ -5,7 +5,7 @@ let parameters = process.argv.slice(2)
 let inputFileName = parameters[0]
 let outputFileName = parameters[1]
 
-let fileInput = require(`../${inputFileName}`) 
+let fileInput = require(`../input/${inputFileName}`) 
 
 let schema = generateSchema.json(fileInput)
 
